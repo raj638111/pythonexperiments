@@ -1,0 +1,16 @@
+
+
+   #  General
+      +  _ & __ are reserved keywords in Python
+      
+   #  Example
+      >>> def amazing():
+      ...   '''This is the amazing function.
+      ...      Want to see it again?'''
+      ...   print('This function is named:', amazing.__name__)
+      ...   print('And its docstring is:', amazing.__doc__)
+      ...
+      >>> amazing()
+      This function is named: amazing
+      And its docstring is: This is the amazing function.
+      Want to see it again?      

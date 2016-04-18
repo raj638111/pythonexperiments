@@ -1,0 +1,108 @@
+
+
+General
+---------------------------------------
+
+   #  Is an equivalent of HashMap in Java 
+   #  Are Mutable #53
+   #  Key
+      +  Python immutable objects can be used as key
+      +  Example : boolean, integer, float, tuple & string
+
+Examples
+---------------------------------------
+
+   #  Creation
+      >>> mydnry = {"day" : "sunday", "temp" : "50F"}
+      >>> mydnry
+      {'day': 'sunday', 'temp': '50F'}      
+
+   #  Conversion (using dict())  #54
+      +  2 Values sequence can be converted into a Dictionary
+      
+      >>> first = [['day', 'sunday'],['temp', '50f']]
+      >>> dnry = dict(first)
+      >>> dnry
+      {'day': 'sunday', 'temp': '50f'}      
+      
+      >>> first = (('day', 'sunday'),('temp', '50f'))
+      >>> dnry = dict(first)
+      >>> dnry
+      {'day': 'sunday', 'temp': '50f'}
+      
+   #  Add / Change an item
+      >>> dnry['day'] = 'monday'
+      >>> dnry
+      {'day': 'monday', 'temp': '50f'}      
+      
+   #  Combine dictionaries #56
+   
+      >>> dnry1 = {'sun':'50f'}
+      >>> dnry2 = {'mon':'60f'}
+      >>> dnry1.update(dnry2)
+      >>> dnry1
+      {'mon': '60f', 'sun': '50f'}
+         
+      Note : When both dictionary has the same key, second dictionary wins
+      
+   #  Delete (One item)
+      >>> del dnry1['mon']
+      >>> dnry1
+      {'sun': '50f'}   
+         
+   #  Delete (All items) : clear()
+      >>> dnry = {'k1':'v1', 'k2':'v2'}
+      >>> dnry.clear()
+      >>> dnry
+      {}
+       
+   #  Test for a key ('in')
+      >>> dnry = {'k1':'v1', 'k2':'v2'}
+      >>> 'k1' in dnry
+      True          
+      
+
+   #  Get a key
+      >>> dnry['k3']
+      Traceback (most recent call last):
+       File "<stdin>", line 1, in <module>
+      KeyError: 'k3'
+            
+   #  Get a key(Provide a default value if the key do not exist)
+      >>> dnry.get('k3', 'somevalue')
+      'somevalue'
+      
+   #  Get all keys (using keys())
+      >>> dnry = {'k1':'v1', 'k2':'v2'}
+      >>> mykeys = dnry.keys()
+      >>> mykeys
+      dict_keys(['k1', 'k2'])
+      Note : The return value is not a list. it is of type 'dict_keys'   
+      >>> list(mykeys)
+      ['k1', 'k2']
+
+   #  Get all values #59
+      >>> dnry.values()
+      dict_values(['v1', 'v2'])
+      >>> list(dnry.values())
+      ['v1', 'v2']
+                 
+   #  Get all key/value pairs(using items()) #59
+      >>> dnry.items()
+      dict_items([('k1', 'v1'), ('k2', 'v2')])
+      >>> list(dnry.items())
+      [('k1', 'v1'), ('k2', 'v2')]      
+   
+
+   #  Assign (using '=')
+      >>> dnry['k1'] = 'someval'
+      >>> dnry
+      {'k1': 'someval', 'k2': 'v2'}
+   
+   #  Copy (using copy()) #60
+      >>> dnry2 = dnry.copy()
+      >>> dnry2
+      {'k1': 'someval', 'k2': 'v2'}   
+      + Now we will have 2 separate copies of the Dictionary
+      
+      

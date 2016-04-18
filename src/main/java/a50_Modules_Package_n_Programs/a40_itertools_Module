@@ -1,0 +1,32 @@
+
+
+   #  Module used : import itertools   #119
+   
+   #  Useful method in itertools module
+      +  itertools.chain()
+         -  Used to iterate over individual elements
+         -  Example
+            >>> import itertools
+            >>> for item in itertools.chain([1, 2], ['a', 'b']):
+            ... print(item)
+            ...
+            1
+            2
+            a
+            b         
+           
+      +  itertools.cycle()
+         -  Is an infinite iterator
+         -  Check example here...#119      
+         
+      +  itertool.sum() #120
+         -  Accumulates
+         -  By default ; accumulates sum
+         -  Custom function can also be passed                 
+
+
+   #  Miscellaneous
+      +  pprint() #120
+         -  Can be imported using : from pprint import pprint
+         -  Can be used to print a nicely formatted string
+                     

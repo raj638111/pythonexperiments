@@ -1,0 +1,73 @@
+
+
+for loop : General info
+-----------------------------------------
+
+   #  Iterating over data streams that otherwise would it not fit into
+      memory completely is possible #77
+
+   #  Following are iterable objects
+      +  strings, tuples, dictionaries, sets & some other elements #77
+      
+   #  break, continue & else
+      +  Can be used just like in 'while'
+            
+   #  zip()
+      +  Can be used to iterate over multiple sequences #79
+      +  Note : zip() stops when the shortest sequence is done
+   #  range()
+      +  Can be used to create number sequences #80      
+      
+Example
+-----------------------------------------
+
+   #  Basic       
+      >>> day='sunday'
+      >>> for letter in day:
+      ...     print(letter)
+      ...
+      s
+      u
+      n
+      d
+      a
+      y      
+ 
+   #  Iterate over values in Dictionary   #78
+      >>> temp = {'sun':'50f', 'mon':'70f'}
+      >>> for farenheit in temp.values():
+      ...     print(farenheit)
+      ...
+      70f
+      50f
+      
+   #  zip() example 1
+      >>> for day, temp in zip(days, temps):
+      ...     print('Day -> ', day, 'Temp ->', temp)
+      ...
+      Day ->  sun Temp -> 90f
+      Day ->  mon Temp -> 60f
+      
+   #  zip() example : Creating list, Tuple and Dictionaries #80
+      >>> list(zip(days, temps))
+      [('sun', '90f'), ('mon', '60f')]
+      >>> dict(zip(days, temps))
+      {'mon': '60f', 'sun': '90f'}   
+   
+   
+   #  range() Example   #80
+      >>> for x in range(0,3):
+      ...     print(x)
+      ...
+      0
+      1
+      2
+      
+      >>> for x in range(3, -1, -1):
+      ...     print(x)
+      ...
+      3
+      2
+      1
+      0
+      

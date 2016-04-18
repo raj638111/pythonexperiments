@@ -1,0 +1,30 @@
+
+Generator Comprehension
+---------------------------------------
+
+   #  Creates Generator object( which creates data on the fly thereby saving memory) #85
+   #  Provides data to iterator #84
+   #  A Generator Can be run only once** (Unlike List, set etc...)   #85
+   #  Generator object can also be created using 'Generator Function' 
+   #  Note 
+      -  Parenthesis provides Generator comprehension & not Tuple comprehension
+      -  In python2 range() return List, whereas in Python3 it returns Generator #98
+      -  In python2 xrange() can be used to return Generator 
+
+
+Example
+---------------------------------------
+
+   >>> number_thing = (number for number in range(1, 6))
+   >>> type(number_thing)
+   <class 'generator'>
+
+   >>> number_list = list(number_thing)   +  First use/run of Generator
+   >>> number_list
+   [1, 2, 3, 4, 5]
+   >>> number_list
+   [1, 2, 3, 4, 5]
+   >>>
+   >>> another_list = list(number_thing)  +  Second use/run of Generator
+   >>> another_list
+   []       *** Not here list is empty, as the generator can be run only once

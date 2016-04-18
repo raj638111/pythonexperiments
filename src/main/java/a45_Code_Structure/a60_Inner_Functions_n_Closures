@@ -1,0 +1,42 @@
+
+
+Inner function 
+-----------------------------------------------#95
+
+   #  Example
+   
+      >>> def outer(a, b):
+      ...   def inner(c, d):
+      ...      return c + d
+      ...   return inner(a, b)
+      ...
+      >>>
+      >>> outer(4, 7)
+      11
+   
+Closures
+-----------------------------------------------#95
+
+   #  An inner function can acts as a Closure
+   #  A closure is a Specialized copy of the Inner Function
+   
+   #  Example
+   
+      >>> def knights2(saying):
+      ...   def inner2():
+      ...      return "We are the knights who say: '%s'" % saying
+      ...   return inner2 #***   Note here we are returning the function name 'inner2'
+                                 instead of calling the function vis-a-vis the previous
+                                 example
+      >>> a = knights2('Duck')
+      >>> b = knights2('Hasenpfeffer')
+      
+      >>> type(a)
+      <class 'function'>
+      >>> type(b)
+      <class 'function'>         
+      
+      >>> a
+      <function knights2.<locals>.inner2 at 0x10193e158>
+      >>> b
+      <function knights2.<locals>.inner2 at 0x10193e1e0>

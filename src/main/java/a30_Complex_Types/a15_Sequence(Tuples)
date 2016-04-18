@@ -1,0 +1,60 @@
+
+Tuples
+---------------------------#52
+   
+   #  Are Immutable #41
+   
+   #  Advantage over list
+      +  'Name tuples' can be used as alternative to object #53
+      +  Use less space
+      +  Can be used as Dictionary keys
+      +  Function argument can be passed as tuples
+   
+Example
+---------------------------#53
+   
+   #  Creation 
+      >>> mytuple = ()
+      >>> mytuple
+      ()
+      
+      >>> oneormoreelement = "firstelement",
+      >>> oneormoreelement
+      ('firstelement',)
+      
+      >>> anothertuple = "element1", "element2", "element3"
+      >>> anothertuple
+      ('element1', 'element2', 'element3')
+      
+   #  Assignment (aka Tuple unpacking) #52
+   
+      >>> a, b, c = anothertuple
+      >>> a
+      'element1'
+      >>> b
+      'element2'
+      >>> c
+      'element3'
+   
+   #  Exchange
+      >>> var1="val1"
+      >>> var2="val2"
+      >>> var1, var2 = var2, var1
+      >>> var1
+      'val2'
+      >>> var2
+      'val1'  
+
+   #  Conversion to Tuple
+      >>> mylist = ['v1', 'v2']
+      >>> mytuple = tuple(mylist)
+      >>> mytuple
+      ('v1', 'v2')          
+                  
+      
+Winding up Datatypes
+--------------------------------------
+
+   #  A Tuple can be used as a Key for a Dictionary as the Tuple is immutable(a key in Dictionary should
+      always be immutable #67        
+      

@@ -1,0 +1,11 @@
+
+   #  First class Citizen
+      +  A function is also an Object & is a first class citizen #93
+
+   #  Example
+   
+      >>> def run_with_positional_args(func, *args):
+      ... return func(*args)      
+      
+      >>> run_with_positional_args(sum_args, 1, 2, 3, 4)
+      10

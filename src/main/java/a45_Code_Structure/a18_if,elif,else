@@ -1,0 +1,30 @@
+
+   #  Compare
+      >>> vacation=True
+      >>> if vacation:
+      ...     print('Good')   # Note the Indentation. This is mandatory in Python
+      ... else:
+      ...     print('Bad')
+      ...
+      Good
+      >>>     
+      +  Recommended
+         -  The recommended indentation is PEP-8(ie four spaces)  #71
+      +  Equality operators are,
+         -  ==
+         -  !=
+         -  <  
+         -  <=
+         -  >
+         -  >=
+         -  in...
+      +  What is considered 'False' #74
+         -  boolean        False
+         -  null           None
+         -  Zero integer   0
+         -  Zero float     0.0
+         -  empty string   ''
+         -  empty list     []
+         -  empty tuple    ()
+         -  empty dic      {}
+         -  empty set      set()      

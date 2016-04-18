@@ -1,0 +1,9 @@
+
+
+   #  Example
+   
+      >>> class Car():
+      ...   pass
+      ...
+      >>> class Yugo(Car): #  Note here 'Yugo' inherits 'Car'
+      ...   pass

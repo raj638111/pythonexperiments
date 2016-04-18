@@ -1,0 +1,42 @@
+
+
+   #  Is the name of another Python file without .py extension
+   #  Ways to import module
+      +  import sys
+      +  import sys as somename
+      +  from random import choice
+      +  from report import get_description as do_it
+      
+   #  Recommended
+      +  To import all the modules at the beginning of the file
+
+   #  Example 1 
+   
+      [raj@Rajkumars-MBP ~/del]$cat hello.py
+      import sys                                   # Module name imported here
+      print("This program works -> ", sys.argv)
+      
+      [raj@Rajkumars-MBP ~/del]$python3 hello.py
+      This program works ->  ['hello.py']
+      
+   #  Example 2 
+      + weatherman.py
+      
+      import report
+      description = report.get_description()
+      print("Today's weather:", description)
+
+      +  report.py
+
+      def get_description(): # see the docstring below?
+         """Return random weather, just like the pros"""
+         from random import choice                 #  Import function 'choice' from Module 'random'
+         possibilities = ['rain', 'snow', 'sleet', 'fog', 'sun', 'who knows']
+         return choice(possibilities)
+         
+      +  report.py   (Another version)
+      
+      def get_description():
+         import random
+         possibilities = ['rain', 'snow', 'sleet', 'fog', 'sun', 'who knows']
+         return random.choice(possibilities)         

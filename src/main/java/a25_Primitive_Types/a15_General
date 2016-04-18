@@ -1,0 +1,44 @@
+
+   #  Strongly typed
+      +  Python is strongly typed #16
+   #  Objects
+      +  All data type in Python are created as Objects #15
+      +  This includes : numbers, strings, tuples & functions etc... #93
+      
+   #  'type'   #17
+      +  Can be used to identify the type of a variable or literal value
+      >>> a = 7
+      >>> type(a)
+      <class 'int'>
+      >>> type(9)
+      <class 'int'>
+      >>> type('a')
+      <class 'str'>
+      
+   #  Variable name constraints 
+      +  Python treats variables starting with '_' in a special way #18
+      +  Reserved keywords 
+         .  Check here for more...#19
+         
+   #  Division #22
+      +  Decimal division     : uses '/'
+      +  Truncating division  : uses '//'
+      +  Reminder             : uses '%'
+      +  divmod()             : Provides Quotient and reminder Tuple #23
+      >>> 8/5
+      1.6
+      >>> 8//5
+      1       
+      >>> divmod(8,5)
+      (1, 3)
+      
+         
+         
+         
+         
+         
+         
+               
+
+      
+                     

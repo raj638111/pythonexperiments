@@ -1,0 +1,21 @@
+
+   #  Positional arguments
+      +  Are the arguments that are passed based on their position in the function definition
+         (This is the normal way we pass arguments in many languages)      
+
+   #  '*'
+      +  Can be used to gather Positional arguments as Tuple
+      
+
+   #  Example
+      >>> def print_more(required1, required2, *args):
+      ...   print('Need this one:', required1)
+      ...   print('Need this one too:', required2)
+      ...   print('All the rest:', args)      
+            
+      >>> print_more('cap', 'gloves', 'scarf', 'monocle', 'mustache wax')
+      Need this one: cap
+      Need this one too: gloves
+      All the rest: ('scarf', 'monocle', 'mustache wax')            
+      
+      

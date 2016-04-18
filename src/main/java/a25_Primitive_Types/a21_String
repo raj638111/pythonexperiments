@@ -1,0 +1,98 @@
+
+String (General)
+------------------------------------------------
+   
+   #  Is represented using
+      +  ''
+      +  ""
+      +  '''   : Used for multiline strings #29
+   #  Supports Unicode characters(In Python3) #28
+   #  Is a 'sequence' of characters #28
+   #  Are Immutable
+      
+Type Conversion
+------------------------------------------------
+
+   #  Done using str() method #30
+   
+   >>> str(98.6)
+   '98.6'
+   >>> str(1.0e4)
+   '10000.0'
+   >>> str(True)
+   'True'      
+
+String operations
+------------------------------------------------
+   
+   #  Duplicate with (*)
+   >>> 'Na' * 4;
+   'NaNaNaNa'
+   
+   #  Extraction([])
+      >>> letter = 'raj'
+      >>> letter[2]
+      'j'
+      >>> letter[5]
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+      IndexError: string index out of range
+
+   #  replace()
+      >>> letter.replace('r', 'T')
+      'Taj'
+   
+   #  Slice with[start:end:step] #33
+      >>> 'T' + letter[1:]
+      'Taj'
+      +  Usage
+         -  [:]
+         -  [start:]
+         -  [:end]
+         -  [start:end]
+         -  [start:end:step]   
+         
+   #  len()
+   #  split() #35
+      -  By default uses any sequence of white space characters(newline, space & tabs)
+      >>> mystring = "This\n,is\ta string"
+      >>> mystring.split()
+      ['This', ',is', 'a', 'string']
+   #  join() #36
+      >>> mylist = ["this", "is", "a", "list"]
+      >>> mylist.join('|')
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+      AttributeError: 'list' object has no attribute 'join'
+      >>> '|'.join(mylist)
+      'this|is|a|list'
+   #  startswith() #37
+   #  endswith()
+   #  find()
+   #  rfind()
+   #  count()
+   #  isalnum()   
+      +  Are all characters either letter (or) numbers #37
+   #  strip()
+      +  Removes sequence of the given letter from both ends
+   #  capitalize()
+      +  Capitalize first letter in the first word
+   #  title()
+      +  Capitalize first letter in all the words
+   #  upper(), lower()
+      +  Capitalize all letters
+   #  swapcase()
+      +  Swap upper and lower case
+   #  center()
+      +  Center the string within a given space
+   #  ljust(), rjust()
+                     
+   
+   
+   
+               
+   
+
+
+      
+   

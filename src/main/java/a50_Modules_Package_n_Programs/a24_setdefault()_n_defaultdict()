@@ -1,0 +1,56 @@
+
+setdefault()
+--------------------------------------------#115
+
+   #  Can be used in Dictionary instead of get()
+      when we need a default value in absend of key
+   
+      
+   #  Example
+      >>> periodic_table = {'Hydrogen': 1, 'Helium': 2}
+   
+      >>> carbon = periodic_table.setdefault('Carbon', 12)  #  Default value is set here
+      >>> carbon
+      12
+      >>> periodic_table
+      {'Helium': 2, 'Carbon': 12, 'Hydrogen': 1}
+      
+      >>> helium = periodic_table.setdefault('Helium', 947) #  Assigning value to an existing key
+                                                            #  retains the default value
+      >>> helium
+      2      
+
+      
+defaultdict()
+--------------------------------------------#115
+
+   #  Default value is specified during the creation of the
+      dictionary
+   #  Function is passed as an argument
+   #  Module used : from collections import defaultdict
+      
+   #  Example 1
+      
+      >>> from collections import defaultdict
+      >>> periodic_table = defaultdict(int)     #  Here int is a function which returns a value of '0'
+      
+   #  Example 2 : Using Lambdas
+   
+      >>> bestiary = defaultdict(lambda: 'Huh?')
+      >>> bestiary['E']
+      'Huh?'
+               
+   #  Example 3 : Creating a Counter (Nice example)
+   
+      >>> from collections import defaultdict
+      >>> food_counter = defaultdict(int)
+      >>> for food in ['spam', 'spam', 'eggs', 'spam']:
+      ... food_counter[food] += 1
+      
+      >>> for food, count in food_counter.items():
+      ... print(food, count)
+      ...
+      eggs 1
+      spam 3
+      
+      

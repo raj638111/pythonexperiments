@@ -1,0 +1,35 @@
+
+
+   #  Is an alternative to create Generators  instead of using Generator
+      comprehension #98
+      
+   #  yield    #98
+      +  Generator function uses 'yield' instead of 'return'
+
+   #  Refer Generator Comprehension to know more on Generators ...in #85      
+      
+   #  Example
+      >>> def my_range(first=0, last=10, step=1):
+      ...   number = first
+      ...   while number < last:
+      ...      yield number
+      ...      number += step
+      ...      
+      
+      >>> my_range         -- Normal function
+      <function my_range at 0x10193e268>
+      
+      
+      >>> ranger = my_range(1, 5)
+      >>> ranger           -- Generator Object
+      <generator object my_range at 0x101a0a168>
+      
+      >>> for x in ranger: -- Iterate
+      ...   print(x)
+      ...
+      1
+      2
+      3
+4
+      
+            

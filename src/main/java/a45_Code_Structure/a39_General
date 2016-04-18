@@ -1,0 +1,54 @@
+
+General
+----------------------------
+
+   #  A function can 
+      +  Take any no of arguments   #88
+      +  Any no of output results
+      
+   #  Default parameter values 
+      +  Check example below  
+      +  Argument(understand the distinction b/w parameter & argument) values
+         are calculated when the function is defined(& not when it is run).
+         ***This has implication for mutable types like List. Check example here...#90
+   #  Docstrings
+      +  Is a way to provide documentation to a Function  #92   
+      +  Use help(function_name) to get the documentation for a function
+   #  'pass'
+      +  Can be used to denote an empty function          
+
+Example : Basic
+----------------------------
+
+   def myfunc(msg) :
+      if msg == "hi":
+         print("hello")
+      else:
+         print("No message")
+         
+   myfunc("hi")      
+      
+   
+Example : Default arguments
+----------------------------
+
+   >>> def menu(wine, entree, dessert='pudding'):
+   ... return {'wine': wine, 'entree': entree, 'dessert': dessert}
+   
+   menu('chardonnay', 'chicken')
+   {'dessert': 'pudding', 'wine': 'chardonnay', 'entree': 'chicken'}
+   
+Example : Docstrings
+----------------------------#93
+   >>> def echo(anything):
+   ...   'echo returns its input argument'
+   ...   return anything
+   
+   
+   >>> help(echo)
+   Help on function echo in module __main__:
+   echo(anything)
+   echo returns its input argument
+   
+   >>> print(echo.__doc__)
+   echo returns its input argument

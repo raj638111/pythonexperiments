@@ -1,0 +1,16 @@
+
+
+   
+   #  Hints
+      +  id()  #102
+         -  Can be used to print unique value of each object(through which
+            we can identify if the variable with the same name is different or not
+      +  global <variable name>
+         -  Use 'global' to explicitly say that we are using a global variable
+            (Remember Python standard ; 'explicit is better than implicit')
+      +  locals()
+         -  Returns a dictionary of the contents of the local namespace
+      +  global()
+         -  Returns a dictionary of the contents of global namespace                     
+            
+   

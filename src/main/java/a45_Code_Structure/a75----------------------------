@@ -1,0 +1,26 @@
+
+General info
+---------------------------------------
+
+   #  Generator Comprehension provides data to iterator #84
+   #  Note : Parenthesis provides Generator comprehension & not Tuple comprehension
+
+
+Example
+---------------------------------------
+
+   >>> number_thing = (number for number in range(1, 6))
+   >>> type(number_thing)
+   <class 'generator'>
+
+   >>> for number in number_thing:
+   ...     print(number)
+   ...
+   1
+   2
+   3
+   4
+   5
+   >>> number_list = list(number_thing) 
+   >>> number_list
+   []       ## ***This is not working

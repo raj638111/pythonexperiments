@@ -1,0 +1,23 @@
+
+
+   #  Is a way to pass arguments in different position vis-a-vis the 
+      position of Parameters #89
+      
+   #  **
+      +  Can be used to gather Keyword arguments into a Dictionary      
+      
+   #  Example : Basic
+   
+      >>> def menu(wine, entree, dessert):
+      ... return {'wine': wine, 'entree': entree, 'dessert': dessert}    
+      
+      >>> menu(entree='beef', dessert='bagel', wine='bordeaux')
+      {'dessert': 'bagel', 'wine': 'bordeaux', 'entree': 'beef'}
+            
+   #  Example : **
+      
+      >>> def print_kwargs(**kwargs):
+      ... print('Keyword arguments:', kwargs)
+      
+      >>> print_kwargs(wine='merlot', entree='mutton', dessert='macaroon')
+      Keyword arguments: {'dessert': 'macaroon', 'wine': 'merlot', 'entree': 'mutton'}

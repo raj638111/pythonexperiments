@@ -1,0 +1,21 @@
+
+
+   #  Is used to create a double ended queue #118
+   #  Module used : from collections import deque
+   
+   #  Methods
+      +  popleft()
+         -  Is used to return & remove left most item from dequeue
+      +  pop()
+         -  Is used to return & remove right most item from dequeue
+         
+   #  Miscellaneous (A quick palindrome checker using slice) #119
+   
+      >>> def another_palindrome(word):
+      ...   return word == word[::-1]
+      ...
+      >>> another_palindrome('radar')
+      True
+      >>> another_palindrome('halibut')
+      False
+                          

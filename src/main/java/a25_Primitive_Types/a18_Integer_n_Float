@@ -1,0 +1,45 @@
+
+   #  Integer
+   
+      +  Can be represented in 4 Bases #24
+                        (Base  10 : Decimal : the default)
+         0b    (or)  0B (Base   2 : Binary)
+         0o             (Base   8 : Octal)
+         0x             (Base  16 : Hex)
+      +  Number system other than base 10 are useful in bit level operations #25
+
+   
+   #  Type conversion
+      +  use int() method
+      >>> int(99.5)
+      99
+      >>> int('99')
+      99
+      >>> int(True)
+      1
+      >>> int(False)
+      0
+      >>> True + 3
+      4
+      >>> int('99.5')
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+      ValueError: invalid literal for int() with base 10: '99.5'      
+      
+   #  How big is int #26
+      +  Python 2
+         -  int   : 32 bits
+         -  long  : 64 bits
+      +  Python 3 
+         -  int   : Can be any size #26
+         -  long  : No longer available
+
+   #  Float
+      >>> float(True)
+      1.0
+      >>> float('99')
+      99.0
+      >>> float(99)
+      99.0
+      >>> float('99.5')
+      99.5            

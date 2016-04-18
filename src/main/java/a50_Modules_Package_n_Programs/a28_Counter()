@@ -1,0 +1,21 @@
+
+
+   #  Can be used to count items in List
+   
+      >>> from collections import Counter
+      >>> breakfast = ['spam', 'spam', 'eggs', 'spam']
+      >>> breakfast_counter = Counter(breakfast)
+      >>> breakfast_counter
+      Counter({'spam': 3, 'eggs': 1})
+      
+   #  Counter.most_common()
+      +  Returns all elements in ascending order #117
+      
+   #  Other operations on counter
+      +  +
+      +  -
+      +  &  Intersection
+      +  |  Union
+        
+            
+      

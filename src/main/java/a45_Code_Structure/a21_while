@@ -1,0 +1,21 @@
+
+
+
+   #  while
+      >>> i = 0
+      >>> while i < 3:
+      ...     i+=1
+      ...     print(i)
+      ...
+      1
+      2
+      3
+      
+   #  break
+      +  Example here...#75
+   #  continue
+      +  Example here...#76
+      
+   #  while else
+      +  Control will move into 'else' if no 'break' is encountered inside 'while'
+      +  Check example here...#76                  

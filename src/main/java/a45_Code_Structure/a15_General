@@ -1,0 +1,12 @@
+
+
+   #  Indentation #69
+      +  White space is used to define program structure
+   #  Comment
+      +  Use '#'
+      +  Python do not have multiline comment
+   
+   #  Continue Lines
+      +  Use '\'
+      
+                                       

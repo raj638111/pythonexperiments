@@ -1,0 +1,53 @@
+
+   #  Is a function that takes one function as Input & return 
+      another functions #99
+   #  Annotation can also be used to assign a Decorator      
+      
+   #  Example : Decorator Function
+      
+      >>> def document_it(func):                   # Decorator Function 1
+      ...   def new_function(*args, **kwargs):
+      ...      print('Running function:', func.__name__)
+      ...      print('Positional arguments:', args)
+      ...      print('Keyword arguments:', kwargs)
+      ...      result = func(*args, **kwargs)
+      ...      print('Result:', result)
+      ...      return result
+      ...   return new_function
+      
+      >>> def square_it(func):                     # Decorator Function 2
+      ...   def new_function(*args, **kwargs):
+      ...      result = func(*args, **kwargs)
+      ...      return result * result
+      ...   return new_function
+      
+      >>> def add_ints(a, b):                      #  Actual Function
+      ...   return a + b
+      ...
+      >>> add_ints(3, 5)
+      8      
+      
+   #  Example : Manual decorator assignment
+         
+      >>> cooler_add_ints = document_it(add_ints) 
+      >>> cooler_add_ints(3, 5)
+      Running function: add_ints
+      Positional arguments: (3, 5)
+      Keyword arguments: {}
+      Result: 8
+      8
+      
+   #  Example : Decorator assignment using Annotation #100
+      (** Try reversing the order of annotation & see what happens)
+   
+      >>> @document_it
+      ... @square_it
+      ... def add_ints(a, b):
+      ...   return a + b
+      ...
+      >>> add_ints(3, 5)
+      Running function: new_function
+      Positional arguments: (3, 5)
+      Keyword arguments: {}
+      Result: 64
+      64

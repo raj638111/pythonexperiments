@@ -1,0 +1,29 @@
+
+
+   #  Multiple modules can be combined into a Package
+   #  A Directory is considered to be a Package when it has,
+      +  __init__.py file
+      
+      
+   #  Example
+   
+   +  boxes/weather.py   
+      
+   from sources import daily, weekly
+   print("Daily forecast:", daily.forecast())
+   print("Weekly forecast:")
+   for number, outlook in enumerate(weekly.forecast(), 1):
+      print(number, outlook)
+      
+   +  Module 1: boxes/sources/daily.py
+   
+   def forecast():
+      'fake daily forecast'
+      return 'like yesterday'      
+      
+   +  Module 2: boxes/sources/weekly.py
+   
+   def forecast():
+      """Fake weekly forecast"""
+      return ['snow', 'more snow', 'sleet',
+      'freezing rain', 'rain', 'fog', 'hail']   

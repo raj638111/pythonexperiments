@@ -1,0 +1,96 @@
+
+
+General
+---------------------------
+   #  Sequence are represented by 'tuples' & 'lists'
+      +  Note : 'string' is also a sequence(of characters)
+
+List
+---------------------------#43
+      
+   #  Are mutable     
+   #  Example
+      >>> mylist1 = ["this", "is", "list"]
+      
+      >>> mylist2 = list("this", "is", "list")
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+      TypeError: list() takes at most 1 argument (3 given)
+      
+      >>> mylist2 = list()
+      
+      >>> list('cat')
+      ['c', 'a', 't']
+      
+   #  From Tuple      
+      >>> mytuple = ('a', 'sample', 'string')
+      >>> mylist = list(mytuple)
+      >>> mylist
+      ['a', 'sample', 'string']
+
+   #  Extraction & Replacement      
+      >>> mylist[1]
+      'sample'
+      
+      >>> mylist[-1]
+      'string'
+      
+      >>> mylist[2] = 'something'
+      >>> mylist
+      ['a', 'sample', 'something']
+      
+   #  Using slices  #45      
+      >>> mylist[0:2]
+      ['a', 'sample']   
+      
+      
+   #  append()
+      >>> mylist.append("appended")
+      >>> mylist
+      ['a', 'sample', 'something', 'appended']
+      
+   #  extend() or += #46
+      >>> first = ['my', 'first']
+      >>> last = ['the', 'last'];
+      >>>
+      >>> first.extend(last)
+      >>> first
+      ['my', 'first', 'the', 'last']
+   
+   #  insert() #46
+   #  del
+      >>> del first[1]
+      >>> first
+      ['my', 'the', 'last']
+   #  remove()
+      +  Delete by value
+   #  pop() #47
+      +  Retrive & delete
+      +  Note : Also takes different arguments
+   #  index()
+   
+   #  'in'
+      >>> marxes = ['Groucho', 'Chico', 'Harpo', 'Zeppo']
+      >>> 'Groucho' in marxes
+      True
+      
+   #  count()
+   #  join()
+      + Convert a string using join() #49
+   #  sort()
+      +  Sort the list itself
+   #  sorted()
+      +  Returns a copy of the sorted list
+   #  len()
+   
+   #  Assign
+      +  Assign : '=' is used
+      
+   #  Copy    
+      +  copy()
+      +  list()
+      +  [:]      : Slice                       
+                  
+                  
+         
+            
